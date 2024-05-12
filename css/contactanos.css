@@ -1,0 +1,120 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#franja1{
+    background:  linear-gradient(to bottom, #171f27,#56697c);
+    height:5vh;
+}
+#franja2{
+    background: linear-gradient(to bottom,#006b92,#0294c9);
+    height:5vh;
+}
+#franja3{
+    background: linear-gradient(to bottom,#0294c9,#006b92);
+    height:5vh;  
+}
+#franja4{
+    background: linear-gradient(to bottom,#006b92,#004964);
+    height:5vh;  
+}
+#containerform{
+    height: 70vh;
+    background: linear-gradient(to right,#fff,#fff,#ececec,#f3f3f3,#ececec,#fff,#fff);
+}
+#idmensaje{
+    height: 20vh;
+}
+
+.form-control{
+    border: none;
+}
+#button{
+    font-weight: bolder;
+    color: #004964;
+    padding: 10px;
+    background-color: #B59C61;
+    border: 0;
+    border-radius:30px;
+    box-shadow: 3px 2px 5px #a2a1a1;
+}
+.bimenu{
+    color: #fff;
+}
+.binube{
+    color: #004964;
+}
+.link{
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+.link:hover{
+    font-size: 1.2rem;
+    transition:0.5s;
+}
+.rotulo{
+    margin-top: 10px;
+    line-height: 0;
+}
+.img-fluid{
+    border-radius:30px;
+    border:solid 5px #B59C61;  
+}
+#logominjusticia{
+    border: none;
+}
+#imglogoinpec{
+    width:15vh;
+    border: none;
+    border-radius:0px;  
+}
+#lineaMando{
+    background: linear-gradient(to right,#fff,#fff,#bdc8d1,#fff,#fff);
+}
+#boxlogo{
+    background: linear-gradient(to right,#fff,#fff,#B59C61,#fff,#fff);
+}
+#imgmapa{
+    border: none;
+    height: 50vh;
+}
+#imgletrasregional{
+    border:none;
+    border-radius:0px;
+}
+#imgletrasnoroeste{
+    border:none;
+    border-radius:0px;  
+}
+#imgclasificacion{
+    border:none;
+}
+#imgedificio{
+    border:none;
+    border-radius: 50%;
+}
+#imgUbicacion{
+    border:none;
+    border-radius: 50%;
+}
+#imgletrainpec{
+    border:none;
+    border-radius:0px;
+}
+#containerEron{
+    height: 45vh;
+    background: linear-gradient(to right,#fff,#fff,#bdc8d1,#fff,#fff);
+}
+#cardEron{
+    height: 40vh;
+    background-color: #fff;
+    border-radius: 30px;
+    border:solid 5px #004964; 
+}
+#imgEron{
+    height: 40vh;
+    border:solid 5px #004964;
+
+}

@@ -1,0 +1,123 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #25323f;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    background-image:
+        linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+    background-size: 100px 50px;
+}
+
+.content, .login-form {
+    transition: transform 0.5s ease;
+    position: absolute;
+    border-radius: 10px;
+    padding: 20px;
+    color: white;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+    width: 50%;
+}
+
+.content h1:hover {
+    color: bisque;
+}
+
+.login-form.hidden, .menu.hidden {
+    display: none;
+}
+
+.menu a {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    padding: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.menu a i {
+    height: 20px;
+    margin-right: 8px; /* Espacio entre el icono y el texto */
+}
+
+.menu a:hover {
+    background-color: #f0ad4e;
+    border-radius: 10px;
+    color: #25323f;
+}
+
+.login-form {
+    transition: transform 0.5s ease;
+    position: absolute;
+    border-radius: 10px;
+    padding: 20px;
+    color: white;
+    background: rgba(0, 0, 0, 0.3);
+    transform: translateX(-60%); /* Inicia fuera de la vista */
+    
+}
+
+.login-form.hidden {
+    display: none;
+    transform: translateX(-100%); /* Mantener fuera de la vista cuando está oculto */
+    
+}
+
+.login-form.active {
+    display: block; /* Mostrar cuando está activo */
+    transform: translateX(-100%); /* Ajustar para mover ligeramente a la izquierda */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #ec9b29; /* Cambio de color del botón */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color:#25323f;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #f15309; /* Oscurecer el botón al pasar el mouse */
+}
+
+.content p {
+    color: white; /* Color del texto */
+}
+
+.content a {
+    color: #f0ad4e; /* Color de los enlaces para destacar */
+    text-decoration: none; /* Sin subrayado */
+}
+
+.content a:hover {
+    text-decoration: underline; /* Subrayado al pasar el mouse para mejorar la interactividad */
+}
+
+.social-links a {
+    margin-right: 10px; /* Espacio entre iconos */
+    font-size: 24px; /* Tamaño de los iconos */
+}
+
+.social-links a:hover {
+    color: #e96e10; /* Cambiar el color al pasar el mouse */
+}
+
+
+
+

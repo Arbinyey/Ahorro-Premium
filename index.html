@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahorro Premium</title>
+    <link rel="icon" href="/src/img/iconoTitleAhorroPremium1.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore-compat.js"></script>
+
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyADNp_fxA0ndr-xeU71w3LiV42Vw19md8I",
+            authDomain: "ahorro-premium.firebaseapp.com",
+            projectId: "ahorro-premium",
+            storageBucket: "ahorro-premium.appspot.com",
+            messagingSenderId: "555242130506",
+            appId: "1:555242130506:web:7b5dc9c1f34378a9046ab3",
+            measurementId: "G-MEASUREMENT_ID"
+        };
+    
+        // Inicializar Firebase
+        firebase.initializeApp(firebaseConfig);
+        const auth = firebase.auth();
+        const db = firebase.firestore();
+    </script>
+    
+</head>
+<body>
+    <div class="main">
+        <div class="content" onclick="toggleContent()">
+            <h1>Ahorro Premium<sup>&reg;</sup></h1>
+            <img src="/src/img/iconoTitleAhorroPremium.png" alt="Ahorro Premium Logo" class="logo">
+            <p>Maximiza tus ahorros y potencia tus metas.</p>
+            <p><a href="contactanos.html">direccion.rnoroeste@inpec.gov.co</a></p>
+            <div class="social-links">
+                <a href="https://youtube.com/" target="_blank" title="Visítanos en YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="https://wa.me/573202592320" target="_blank" title="Contáctanos por WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+        
+        <div class="login-form hidden">
+            <form onsubmit="validateLogin(event)">
+                <input type="text" id="username" placeholder="Usuario" name="username" required>
+                <input type="password" id="password" placeholder="Contraseña" name="password" required>
+                <button type="submit">Iniciar Sesión</button>
+            </form>
+            <div class="menu hidden">
+                <a href="/ahorro"><i class="fas fa-piggy-bank"></i> Ahorro</a>
+                <a href="/socios"><i class="fas fa-users"></i> Socios</a>
+                <a href="/base-de-datos"><i class="fas fa-database"></i> Base de Datos</a>
+                <a href="/prestamos"><i class="fas fa-hand-holding-usd"></i> Préstamos</a>
+                <a href="/sorteo"><i class="fas fa-random"></i> Sorteo</a>
+                <a href="/ranking"><i class="fas fa-chart-line"></i> Ranking</a>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
+
+
